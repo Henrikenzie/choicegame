@@ -310,84 +310,464 @@ def battlefield():
     elif(campo == 'oceano' and player == 'poseidon' and enemy == 'hades'):
         print('Parábens,Você derrotou o senhor das trevas e agora também está muito mais forte no Mundo inferior.')
         batalhaPoseidonVenceHades()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
+
     elif(campo == 'oceano' and player == 'poseidon' and enemy == 'zeus'):
         print('Parábens,Você derrotou o Deus dos Deuses e agora também está muito mais forte no Olimpo.')
         batalhaPoseidonVenceZeus()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'oceano' and player == 'poseidon' and enemy == 'humanos'):
         print('Parábens,Você derrotou sua criação. Agora tem mais força pelos tributos ofertados por ela.')
         batalhaPoseidonVenceHumanos()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'oceano' and player == 'hades' and enemy == 'zeus'):
         print('Parábens,Você derrotou o Deus dos Deuses e agora também está muito mais forte no Olimpo.')
         batalhaHadesVenceZeus()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'oceano' and player == 'hades' and enemy == 'poseidon'):#ENDGAME
         print('Você enfrentou seu irmão em sua casa e por isto padeceu. Fim de jogo.')
         
     elif(campo == 'oceano' and player == 'hades' and enemy == 'humanos'):
         print('Parábens,Você derrotou sua criação. Agora tem mais força pelos tributos ofertados por ela.')
         batalhaHadesVenceHumanos()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'oceano' and player == 'zeus' and enemy == 'hades'):
         print('Parábens,Você derrotou o senhor das trevas e agora também está muito mais forte no Mundo inferior.')
         batalhaZeusvenceHades()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'oceano' and player == 'zeus' and enemy == 'poseidon'):#ENDGAME
         print('Você enfrentou seu irmão em sua casa e por isto padeceu. Fim de jogo.')
         
     elif(campo == 'oceano' and player == 'zeus' and enemy == 'humanos'):
         print('Parábens,Você derrotou sua criação. Agora tem mais força pelos tributos ofertados por ela.')
         batalhaZeusvenceHumanos()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     #MUNDO_INFERIOR
 
     elif(campo == 'mundo inferior' and player == 'hades' and enemy == 'poseidon'):
         print('Parábens,Você derrotou o senhor dos oceanos e todos os mares. Agora você também é fortalecido pelas águas.')
         batalhaHadesVencePoseidon()
-
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
     elif(campo == 'mundo inferior' and player == 'hades' and enemy == 'zeus'):
         print('Parábens,Você derrotou o Deus dos Deuses e agora também está muito mais forte no Olimpo.')
         batalhaHadesVenceZeus()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'mundo inferior' and player == 'hades' and enemy == 'humanos'):
         print('Parábens,Você derrotou sua criação. Agora tem mais força pelos tributos ofertados por ela.')
         batalhaHadesVenceHumanos()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'mundo inferior' and player == 'poseidon' and enemy == 'hades'):#ENDGAME
         print('Você enfrentou seu irmão em sua casa e por isto padeceu. Fim de jogo.')
         
     elif(campo == 'mundo inferior' and player == 'poseidon' and enemy == 'zeus'):
         print('Parábens,Você derrotou o Deus dos Deuses e agora também está muito mais forte no Olimpo.')
         batalhaPoseidonVenceZeus()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'mundo inferior' and player == 'poseidon' and enemy == 'humanos'):
         print('Parábens,Você derrotou sua criação. Agora tem mais força pelos tributos ofertados por ela.')
         batalhaPoseidonVenceHumanos()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'mundo inferior' and player == 'zeus' and enemy == 'poseidon'):
         print('Parábens,Você derrotou o senhor dos oceanos e todos os mares. Agora você também é fortalecido pelas águas.')
         batalhaZeusvencePoseidon()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'mundo inferior' and player == 'zeus' and enemy == 'hades'):#ENDGAME
         print('Você enfrentou seu irmão em sua casa e por isto padeceu. Fim de jogo.')
         
     elif(campo == 'mundo inferior' and player == 'zeus' and enemy == 'humanos'):
         print('Parábens,Você derrotou sua criação. Agora tem mais força pelos tributos ofertados por ela.')
         batalhaZeusvenceHumanos()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
 
     #CRETA
     elif(campo == 'creta' and player == 'hades' and enemy == 'poseidon'):
         print('Parábens,Você derrotou o senhor dos oceanos e todos os mares. Agora você também é fortalecido pelas águas.')
         batalhaHadesVencePoseidon()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'creta' and player == 'hades' and enemy == 'zeus'):
         print('Parábens,Você derrotou o Deus dos Deuses e agora também está muito mais forte no Olimpo.')
         batalhaHadesVenceZeus()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'creta' and player == 'hades' and enemy == 'humanos'):#ENDGAME
         print('Você enfrentou sua criação em seu território e por isto padeceu. Fim de jogo.')
     elif(campo == 'creta' and player == 'poseidon' and enemy == 'hades'):
         print('Parábens,Você derrotou o senhor das trevas e agora também está muito mais forte no Mundo inferior.')
         batalhaPoseidonVenceHades()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'creta' and player == 'poseidon' and enemy == 'zeus'):
         print('Parábens,Você derrotou o Deus dos Deuses e agora também está muito mais forte no Olimpo.')
         batalhaPoseidonVenceZeus()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'creta' and player == 'poseidon' and enemy == 'humanos'):#ENDGAME
         print('Você enfrentou sua criação em seu território e por isto padeceu. Fim de jogo.')
     elif(campo == 'creta' and player == 'zeus' and enemy == 'hades'):
         print('Parábens,Você derrotou o senhor das trevas e agora também está muito mais forte no Mundo inferior.')
         batalhaZeusvenceHades()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
+
     elif(campo == 'creta' and player == 'zeus' and enemy == 'poseidon'):
         print('Parábens,Você derrotou o senhor dos oceanos e todos os mares. Agora você também é fortalecido pelas águas.')
         batalhaZeusvencePoseidon()
+        if(campo != 'olimpo' and enemy == 'zeus'):
+            print('Você derrotou o Deus dos Deuses. Você também tornou-se o novo Deus dos Deuses.')
+            print('Restou somente Poseidon para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'Oceano'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+        elif(campo != 'Oceano'  and enemy == 'Poseidon'):
+            print('Você derrotou seu irmão.')
+            print('Restou Zeus para enfrentar')
+            campoFinal = input('Escolha onde quer enfrentar seus inimigos pela ultima vez:\n 1-Olimpo 2-Creta 3-Oceano 4-Mundo inferior: ')
+            campoFinal = campoFinal.lower
+            if(campoFinal != 'olimpo'):
+                print('Você ganhou!')
+            else:
+                print('Você está poderoso,porém até mesmo Deuses caem. Fim de jogo')
+
     elif(campo == 'creta' and player == 'zeus' and enemy == 'humanos'):#ENDGAME
         print('Você enfrentou sua criação em seu território e por isto padeceu. Fim de jogo.')
         
